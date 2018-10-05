@@ -50,7 +50,7 @@ define apt::key (
       if !defined(Anchor["apt_key ${id} present"]) {
         apt_key { $title:
           ensure  => present,
-          refresh => $ensure == 'refreshed',
+          #refresh => $ensure == 'refreshed',
           id      => $id,
           source  => $source,
           content => $content,
