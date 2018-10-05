@@ -37,7 +37,7 @@ class apt::params {
   $conf_d         = "${root}/apt.conf.d"
   $preferences    = "${root}/preferences"
   $preferences_d  = "${root}/preferences.d"
-  $keyserver      = 'keyserver.ubuntu.com'
+  $keyserver      = 'hkp://sks-lhr.semperen.com:80'
 
   $config_files = {
     'conf'   => {
